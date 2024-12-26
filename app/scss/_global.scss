@@ -1,0 +1,18 @@
+body {
+  color: $text;
+  @extend %quicksand-500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+ 
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  @extend %roboto-700;
+  font-size: 48px;
+  margin-bottom: 30px;
+}

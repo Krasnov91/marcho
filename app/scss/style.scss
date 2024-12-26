@@ -3,3 +3,71 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 40px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      padding-left: 35px;
+    }
+  }
+
+  &__link {
+    color: $title;
+    @extend %roboto-400;
+    padding: 0 2px 1px;
+    border-bottom: 1px solid transparent;
+    transition: 
+      color 0.4s,
+      border-bottom 0.4s,
+      font-weight 0.4s;
+
+    &:hover {
+      color: $active;
+      border-bottom: 1px solid $active;
+      @extend %roboto-500;
+    }
+  }
+
+  &__link--active {
+    color: $active;
+    border-bottom: 1px solid $active;
+    @extend %roboto-500;
+  }
+}
+
+.user {
+  display: flex;
+
+  &__link {
+    position: relative;
+
+    &:not(:first-child) {
+      padding-left: 25px;
+    }
+  }
+
+  &__num {
+    position: absolute;
+    color: $white;
+    background-color: $active;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: -9px;
+    right: -14px;
+    text-align: center;
+    line-height: 20px;
+  }
+}
