@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 14px;
 
   &__list {
     display: flex;
@@ -23,11 +24,12 @@
   }
 
   &__link {
+    text-transform: uppercase;
     color: $title;
     @extend %roboto-400;
     padding: 0 2px 1px;
     border-bottom: 1px solid transparent;
-    transition: 
+    transition:
       color 0.4s,
       border-bottom 0.4s,
       font-weight 0.4s;
@@ -69,5 +71,119 @@
     right: -14px;
     text-align: center;
     line-height: 20px;
+  }
+}
+
+.footer-top {
+  padding: 70px 0 40px;
+  border-bottom: 1px solid $border;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @extend %roboto-500;
+    font-size: 22px;
+    line-height: 1;
+    color: $title;
+    margin-bottom: 43px;
+    white-space: nowrap;
+  }
+
+  &__logo {
+    margin-bottom: 35px;
+  }
+
+  &__adress {
+    max-width: 240px;
+    width: 100%;
+    transition: opacity 0.4s;
+    margin-bottom: 10px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__link {
+    white-space: nowrap;
+    transition: opacity 0.4s;
+    margin-bottom: 10px;
+    display: block;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__text {
+    max-width: 470px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    max-width: 471px;
+    width: 100%;
+    display: block;
+  }
+
+  &__input {
+    padding: 12px 15px;
+    border: none;
+    color: $title;
+    margin-right: 5px;
+    max-width: 320px;
+    width: 100%;
+    box-shadow: 0px 7px 20px 0px rgba($text, 0.3);
+
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+
+}
+
+.footer-bottom {
+  padding: 27px 0;
+  display: flex;
+
+  &__copy {
+    margin-right: auto;
+  }
+
+  &__accept {
+    margin-right: 20px;
+  }
+
+  &__img {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  padding-top: 10px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__svg {
+    fill: $text;
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: $active;
+    }
   }
 }
