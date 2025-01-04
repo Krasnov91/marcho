@@ -33,7 +33,7 @@ body {
   background-color: $active;
   text-transform: uppercase;
   @extend %roboto-400;
-  padding: 12px 24px;
+  padding: 12px 28px;
   box-shadow: 0px 7px 20px 0px rgba($active, 0.3);
   transition: opacity 0.4s;
 
