@@ -25,7 +25,10 @@ body {
 .title {
   @extend %roboto-700;
   font-size: 48px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  color: $title;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .main-btn {
