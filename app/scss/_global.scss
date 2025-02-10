@@ -45,6 +45,15 @@ body {
   }
 }
 
+.add-btn {
+  @extend %roboto-400;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: 1px solid $active;
+  display: inline-block;
+  color: $title;
+}
+
 .grey-bg {
   background-color: $grey-bg;
 }
